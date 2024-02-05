@@ -16,7 +16,7 @@ class Pagination
      */
     public function getPage(): int
     {
-        return $this->page;
+        return max($this->page, 1);
     }
 
     /**
